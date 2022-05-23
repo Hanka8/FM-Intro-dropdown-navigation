@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+
+<body>
+  <nav>
+    <div class="navLeft">
+      <img class="logo" src="images/logo.svg" alt="Snap logo">
+      <div class="dropDiv1">
+        <button id="droppingBtn1" class="dropdown hideOnSmall" type="button" name="button">Features
+          <span id="dropIco1" class="arrowIco"></span>
+        </button>
+        <!-- dropdown menu1 -->
+        <div id="dropdown1" class="hide">
+          <button class="dropBtn1" type="button" name="button">
+            <span class="dropIco1"></span>
+            Todo List
+          </button>
+          <button class="dropBtn1" type="button" name="button">
+            <span class="dropIco2"></span>
+            Calendar
+          </button>
+          <button class="dropBtn1" type="button" name="button">
+            <span class="dropIco3"></span>
+            Reminders
+          </button>
+          <button class="dropBtn1" type="button" name="button">
+            <span class="dropIco4"></span>
+            Planning
+          </button>
+        </div>
+      </div>
+
+      <div class="dropDiv2">
+        <button id="droppingBtn2" class="dropdown hideOnSmall" type="button" name="button">Company
+          <span id="dropIco2" class="arrowIco"></span>
+        </button>
+        <!-- dropdown menu 2 -->
+        <div id="dropdown2" class="showDrop2">
+          <button class="dropBtn2" type="button" name="button">History</button>
+          <button class="dropBtn2" type="button" name="button">Our team</button>
+          <button class="dropBtn2" type="button" name="button">Blog</button>
+        </div>
+      </div>
+
+      <button class="hideOnSmall disabled" type="button" name="button">Careers</button>
+      <button class="hideOnSmall" type="button" name="button">About</button>
+    </div>
+
+    <div class="navRight">
+      <button class="hideOnSmall login" type="button" name="button">Login</button>
+      <button class="hideOnSmall register" type="button" name="button">Register</button>
+
+      <!-- mobile menu -->
+      <button id="menuBtn" class="hideOnBig" type="button" name="button">
+        <span class="menuIco"></span>
+      </button>
+      <!-- mobile dropdown menu -->
+      <div class="menu">
+
+      </div>
+
+
+    </div>
+
+  </nav>
+
+
+
+  Make remote work
+
+  Get your team in sync, no matter your location. Streamline processes,
+  create team rituals, and watch productivity soar.
+
+  Learn more
+
+  <footer>
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    </p>
+    <p>
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>
