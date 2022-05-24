@@ -46,7 +46,7 @@
           <span id="dropIco2" class="arrowIco"></span>
         </button>
         <!-- dropdown menu 2 -->
-        <div id="dropdown2" class="showDrop2">
+        <div id="dropdown2" class="hide">
           <button class="dropBtn2" type="button" name="button">History</button>
           <button class="dropBtn2" type="button" name="button">Our team</button>
           <button class="dropBtn2" type="button" name="button">Blog</button>
@@ -60,38 +60,86 @@
     <div class="navRight">
       <button class="hideOnSmall login" type="button" name="button">Login</button>
       <button class="hideOnSmall register" type="button" name="button">Register</button>
+    </div>
 
       <!-- mobile menu -->
       <button id="menuBtn" class="hideOnBig" type="button" name="button">
-        <span class="menuIco"></span>
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
       </button>
       <!-- mobile dropdown menu -->
-      <div class="menu">
+      <div id="menu" class="hideMenu hideOnBig">
+        <div class="dropDiv1">
+          <button id="droppingBtn1__small" class="" type="button" name="button">Features
+            <span id="dropIco1__small" class="arrowIco"></span>
+          </button>
+          <!-- dropdown menu1__small -->
+          <div id="dropdown1__small" class="showDrop1__small">
+            <button class="dropBtn1" type="button" name="button">
+              <span class="dropIco1"></span>
+              Todo List
+            </button>
+            <button class="dropBtn1" type="button" name="button">
+              <span class="dropIco2"></span>
+              Calendar
+            </button>
+            <button class="dropBtn1" type="button" name="button">
+              <span class="dropIco3"></span>
+              Reminders
+            </button>
+            <button class="dropBtn1" type="button" name="button">
+              <span class="dropIco4"></span>
+              Planning
+            </button>
+          </div>
+        </div>
+
+        <div class="dropDiv2">
+          <button id="droppingBtn2__small" class="dropdown" type="button" name="button">Company
+            <span id="dropIco2__small" class="arrowIco"></span>
+          </button>
+          <!-- dropdown menu2__small -->
+          <div id="dropdown2__small" class="showDrop2__small">
+            <button class="dropBtn2" type="button" name="button">History</button>
+            <button class="dropBtn2" type="button" name="button">Our team</button>
+            <button class="dropBtn2" type="button" name="button">Blog</button>
+          </div>
+        </div>
+
+        <button class="disabled" type="button" name="button">Careers</button>
+        <button class="" type="button" name="button">About</button>
+
+        <div class="navRight__small">
+          <button class="login" type="button" name="button">Login</button>
+          <button class="register" type="button" name="button">Register</button>
+        </div>
 
       </div>
-
-
     </div>
-
   </nav>
 
+  <main>
+    <section class="content">
+      <h1>Make<br> remote work</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes,
+      create team rituals, and watch productivity soar.</p>
+      <button type="button" name="button">Learn more</button>
+      <div class="logos">
+        <img src="images/client-databiz.svg" alt="client databiz logo">
+        <img src="images/client-audiophile.svg" alt="audiophile logo">
+        <img src="images/client-meet.svg" alt="client meet logo">
+        <img src="images/client-maker.svg" alt="client maker logo">
+      </div>
+    </section>
+    <section class="illustration">
+      <picture>
+        <source srcset="images/image-hero-mobile.png" media="(max-width:1100px)">
+        <img src="images/image-hero-desktop.png" alt="hero image">
+      </picture>
+    </section>
+  </main>
 
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes,
-  create team rituals, and watch productivity soar.
-
-  Learn more
-
-  <footer>
-    <p>
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    </p>
-    <p>
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
   <script src="app.js"></script>
 </body>
 

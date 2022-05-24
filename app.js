@@ -31,4 +31,46 @@ dropBtn2.addEventListener("click", function(){
   }
 });
 
-// Displaying menu on small screens
+// Button animation and displaying menu on small screen
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("menu");
+
+menuBtn.addEventListener("click", function() {
+  menuBtn.classList.toggle("change");
+  menu.classList.toggle("hideMenu");
+  menu.classList.toggle("menu");
+});
+
+
+// Small screen menu
+const dropBtn1Small = document.getElementById("droppingBtn1__small");
+const dropdown1Small = document.getElementById("dropdown1__small");
+const dropIco1Small = document.getElementById("dropIco1__small");
+
+dropBtn1Small.addEventListener("click", function(){
+  if (dropdown1Small.classList.contains("hide")){
+    dropdown1Small.classList.add("showDrop1__small");
+    dropdown1Small.classList.remove("hide");
+    dropIco1Small.style.backgroundImage = "url('images/icon-arrow-up.svg')";
+  } else {
+    dropdown1Small.classList.remove("showDrop1__small");
+    dropdown1Small.classList.add("hide");
+    dropIco1Small.style.backgroundImage = "url('images/icon-arrow-down.svg')";
+  }
+});
+
+const dropBtn2Small = document.getElementById("droppingBtn2__small");
+const dropdown2Small = document.getElementById("dropdown2__small");
+const dropIco2Small = document.getElementById("dropIco2__small");
+
+dropBtn2Small.addEventListener("click", function(){
+  if (dropdown2Small.classList.contains("hide")){
+    dropdown2Small.classList.add("showDrop2__small");
+    dropdown2Small.classList.remove("hide");
+    dropIco2Small.style.backgroundImage = "url('images/icon-arrow-up.svg')";
+  } else {
+    dropdown2Small.classList.remove("showDrop2__small");
+    dropdown2Small.classList.add("hide");
+    dropIco2Small.style.backgroundImage = "url('images/icon-arrow-down.svg')";
+  }
+});
